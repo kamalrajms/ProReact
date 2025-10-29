@@ -1,20 +1,13 @@
 import React, { useState } from "react";
-import "./UsestateHook.css";
 
 export default function UsestateHook() {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h2 className="count">count :{count}</h2>
-      <button className="count-btn" onClick={() => setCount(count + 1)}>
-        increment
-      </button>
-      <button className="count-btn" onClick={() => setCount(count - 1)}>
-        Decrement
-      </button>
-      <button className="count-btn" onClick={() => setCount(0)}>
-        reset
-      </button>
+      <h3>Count:{count}</h3>
+      <button onClick={() => setCount(count + 1)}>increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <button onClick={() => setCount(0)}>Reset</button>
     </div>
   );
 }
