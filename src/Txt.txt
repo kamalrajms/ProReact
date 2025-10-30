@@ -51,6 +51,8 @@
     setstate --a function that updates the state
     initialvalue -- the starting value of the state
 
+29/10/2025
+
 ## Conditional rendering 
 
     Conditional rendering means showing or hideing of UI based on some condition.
@@ -61,6 +63,10 @@
 ## list rendering 
 
     Rendering multipe items dynamically using .map(),.reduce(),.filter()...
+
+30/10/2025
+
+## form & controlled components useing Usestate()
 
     
 
