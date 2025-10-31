@@ -68,6 +68,29 @@
 
 ## form & controlled components useing Usestate()
 
+
+npm install or npm i
+
+npm run dev
+
+31/10/2025
+
+## useEffect()
+
+    useEffect is a hook that lets you perform side effect if a functionaal components.
+    side effect are task that happends outside the normal react rendering process.
+
+        featching data from API.
+        Updating the browser DOm manually
+        Start/stop timers
+
+     useEffect(()=>{
+        //code
+     },[dependency 1, dependency 2,....])
+
+    if we don't mension the dependency means it will execut initally one time.
+
+
     
 
 
