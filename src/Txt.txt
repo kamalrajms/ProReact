@@ -90,6 +90,23 @@ npm run dev
 
     if we don't mension the dependency means it will execut initally one time.
 
+3/11/2025
+
+## useref()
+
+    useref is a react hook  that gives you a box (.current) you can store anything in 
+    like num,str,obj,fun,even DOM elements
+
+    That value presists between renders
+
+    Updating it does not causes your component to re-render
+
+    {current:value}
+
+    Syntax:
+
+        const refContainer =useref(initialvalue)
+
 
     
 

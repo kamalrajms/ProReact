@@ -10,11 +10,13 @@ import UseefectHook from "./component/UseefectHook";
 import Sec from "./component/Sec";
 import Timer from "./component/Timer";
 import AIPuseEffect from "./component/AIPuseEffect";
+import UserefHook from "./component/UserefHook";
 
 export default function App() {
   const [user, setUser] = useState(true);
   return (
     <div>
+      <UserefHook />
       <AIPuseEffect />
       <Timer />
       <Sec />
