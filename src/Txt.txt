@@ -108,8 +108,29 @@ npm run dev
         const refContainer =useref(initialvalue)
 
 
-    
+4/11/2025
 
+## useContext()
+
+    Passing data from a parent component down to deeply nested child component is annoying.
+    Normally,you'd have to pass props mnually through each level (calling props drilling)
+    useContext lets you skip all the  middle component and share the data directly
+
+        Create a Context
+        Provide a value
+        Consume the value
+
+
+## useReducer()
+
+    syntex
+
+        const[state,dispatch]=useReducer(reducerfunction,initialState)
+
+    state-- current state (like Usestate value)
+    dispatch--a function to tell the render what to do
+    reducerfunction-- the logical that return a new state
+    initialState-- starting value
 
 
 
