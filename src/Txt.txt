@@ -132,5 +132,32 @@ npm run dev
     reducerfunction-- the logical that return a new state
     initialState-- starting value
 
+5/11/2025
 
+## usecallBack()
 
+    Every time a component re-renders, it creates a brand new copy of every 
+    function inside it.
+
+    even if the function code look exactly the same,
+    react sees it as different because it's a new objects in memeory.
+
+    syntex:
+
+        const  variableName= useCallback(()=>{
+            //code
+        },[dependency])
+
+## Routing in react
+
+    Routing means navigation between pages in a web application without refreshing the browser.
+    In traditional websites,clicking a link relads the whole page.
+    In react (SAP) ,Routing lets us changes the view  without reloading.
+
+        better performance (no full page reloag)
+        smooth user experiance
+        Control over navigation without serrvar request
+    
+    commend: npm install react-router-dom
+
+    

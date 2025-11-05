@@ -13,6 +13,7 @@ import AIPuseEffect from "./component/AIPuseEffect";
 import UserefHook from "./component/UserefHook";
 import Frist from "./Context/Frist";
 import UseReducerHook from "./component/UseReducerHook";
+import UsecallBackHook from "./component/UsecallBackHook";
 
 export const Pass = createContext();
 
@@ -21,6 +22,7 @@ export default function App() {
   const name = "kumar";
   return (
     <div>
+      <UsecallBackHook />
       <UseReducerHook />
       <div className="context">
         App component
