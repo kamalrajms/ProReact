@@ -14,34 +14,33 @@ import UserefHook from "./component/UserefHook";
 import Frist from "./Context/Frist";
 import UseReducerHook from "./component/UseReducerHook";
 import UsecallBackHook from "./component/UsecallBackHook";
+import { BrowserRouter, Link, Route, Router, Routes } from "react-router-dom";
+import Home from "./MainComponents/Home";
+import About from "./MainComponents/About";
+import Service from "./MainComponents/Service";
+import Contact from "./MainComponents/Contact";
+import WedDev from "./MainComponents/WedDev";
+import AppDev from "./MainComponents/AppDev";
+import Header from "./MainComponents/Header";
 
 export const Pass = createContext();
 
 export default function App() {
-  const [user, setUser] = useState(true);
   const name = "kumar";
   return (
     <div>
-      <UsecallBackHook />
-      <UseReducerHook />
-      <div className="context">
-        App component
-        <Pass.Provider value={name}>
-          <Frist />
-        </Pass.Provider>
-      </div>
-      <UserefHook />
-      <AIPuseEffect />
-      <Timer />
-      <Sec />
-      <UseefectHook />
-      <RegiterForm />
-      <MultipleField />
-      <Input />
-      <Dark />
-      <button onClick={() => setUser(!user)}>switch</button>
-      {user ? <ListRendering /> : <ConditionalRender />}
-      <UsestateHook />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />}>
+            <Route path="" element={<WedDev />} />
+            <Route path="appdev" element={<AppDev />} />
+          </Route>
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -148,7 +148,9 @@ npm run dev
             //code
         },[dependency])
 
-## Routing in react
+6/11/2025
+
+## Routing in react and nested routing..
 
     Routing means navigation between pages in a web application without refreshing the browser.
     In traditional websites,clicking a link relads the whole page.
@@ -160,4 +162,25 @@ npm run dev
     
     commend: npm install react-router-dom
 
+    structure:
+            <BrowserRoute>
+            <Routers>
+            <route path={} element={} />
+            </Routers>
+            </BrowserRoute>
+
+    <BrowserRoute>--
+        it tell react to use routing in your app.
+        it keep your UI in syn with URL in the browser
+
+    Routers---
+
+        it's a container that holds all your different pages routes.
+        it decides which page to show based on the URL
+
+    route--
+
+        it defines which component to show for a specific path (URL)
+
     
+ ## useNavigate()  --- routing dom
