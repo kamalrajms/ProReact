@@ -1,4 +1,4 @@
-2710/2025
+27/10/2025
 
 ## react intro
 
@@ -184,3 +184,36 @@ npm run dev
 
     
  ## useNavigate()  --- routing dom
+
+ 07/11/2025
+
+ ## useId()
+
+    useId() , is a react hook  tha creates a unique ID for each components instances.
+
+    it's mainly used to link html elements together- for ex . connecting a label and  input 
+    tag or for accessability purposes.
+
+    it creates a unique, consistant and reuseable ID ffor each components  instances- 
+    helpful for linking element like tooltips safety and accessibility. 
+ 
+ ## useActionState()--- mainly used for form tag
+
+     useActionState is a react hook used to track manage the state of asynchronous useActionState
+     -- likr submitting a form or operation -- without  manually eriting a lot  od Usestate 
+     and useEffect logical
+
+        it help in:
+            the pending (loading)state
+            the result (success or failuer) state
+            the error (if the action throws an exception)
+
+    syntex:
+
+        const[state,formAction,isPending]=useActionState(action,initialState)
+
+        action-- a function that performe the async work (like submitting)
+        initialState-- starting value
+        state-- result returned from the action
+        formAction-- function you can call or use in aform action attribute
+        isPending state-- boolean  that tells if the action is currly running.
