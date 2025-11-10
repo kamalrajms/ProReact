@@ -217,3 +217,11 @@ npm run dev
         state-- result returned from the action
         formAction-- function you can call or use in aform action attribute
         isPending state-- boolean  that tells if the action is currly running.
+
+10/11/2025
+
+    ## Useparam() -- routing dom
+
+        useParams() is a React Router hook that lets you read dynamic values from the URL path (not from the query string).
+
+		It’s commonly used when you have routes with dynamic segments like /users/:id or /products/:productId.

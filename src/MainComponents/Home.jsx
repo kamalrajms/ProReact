@@ -20,7 +20,6 @@ export default function Home() {
       <UseIdHook />
       <UseIdHook />
       <UseIdHook />
-     
     </div>
   );
 }

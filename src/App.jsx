@@ -22,6 +22,7 @@ import Contact from "./MainComponents/Contact";
 import WedDev from "./MainComponents/WedDev";
 import AppDev from "./MainComponents/AppDev";
 import Header from "./MainComponents/Header";
+import BlogList from "./component/BlogList";
 
 export const Pass = createContext();
 
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="appdev" element={<AppDev />} />
           </Route>
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/blogs/:id" element={<BlogList />} />
         </Routes>
       </BrowserRouter>
     </div>
