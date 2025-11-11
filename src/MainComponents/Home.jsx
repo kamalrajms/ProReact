@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import UseIdHook from "../component/UseIdHook";
+import Props from "../component/Props";
 
 export default function Home() {
   const [count, setcount] = useState(0);
@@ -20,6 +21,7 @@ export default function Home() {
       <UseIdHook />
       <UseIdHook />
       <UseIdHook />
+      <Props />
     </div>
   );
 }
